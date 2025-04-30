@@ -1,12 +1,15 @@
 {
-  "name": "bun-socket",
-  "scripts": {
-    "dev": "bun run --hot src/index.ts"
-  },
-  "dependencies": {
-    "hono": "^4.7.8"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  }
+    "name": "bun-socket",
+    "type": "module",
+    "scripts": {
+        "dev": "bun run --hot src/index.ts",
+        "build": "bun build src/index.ts --outfile dist/index.js",
+        "start": "bun run dist/index.js"
+    },
+    "dependencies": {
+        "hono": "^4.7.8"
+    },
+    "devDependencies": {
+        "@types/bun": "latest"
+    }
 }
